@@ -1,0 +1,31 @@
+                <div id="container">
+                  <h2>Test:</h2>
+                  <textarea rows="13" id="raw-test">?: Question 1
+[ ] answ 1
+[x] answ 2 correct
+[x] answ 3 correct
+
+?: Question 2
+(x) answer 1 correct
+( ) answer 2
+( ) answer 3
+
+?: Question 3
+= answer</textarea>
+                  <button id="parseButton" type="button">Parse Quiz</button>
+
+                  <!--<h2>JSON</h2>
+                    <div id="json-result">
+                    </div> -->
+
+
+                    <h2>HTML</h2>
+                    <div id="html-result">
+                    </div>
+
+                    <h2>Для сайту</h2>
+                    <textarea rows="5" id="html-export">
+                    </textarea>
+                    <button id="copyHTML" type="button">Копіювати тест</button>
+
+                </div>

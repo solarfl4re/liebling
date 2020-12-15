@@ -6,6 +6,13 @@ This template is used for the posts that are marked as pages.
 into the {body} of the default.hbs template --}}
 {{!< default}}
 
+{{#contentFor "customScripts"}}
+    <script src="{{asset "quizlib.1.0.1.min.js"}}"></script>
+    <script src="{{asset "testmaker.js"}}"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset "quiz.css"}}" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{{asset "testmaker.css"}}" media="screen" />
+{{/contentFor}}
+
 {{!-- Everything inside the #post tags pulls data from the post --}}
 {{#post}}
   <div class="main-wrap">

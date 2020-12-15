@@ -9,7 +9,7 @@
   border: 1px solid var(--primary-border-color);
   outline: 0;
   background-color: var(--background-color);
-  @extend .no-appearance;
+/*  @extend .no-appearance; */
 
   &.in-search {
     font-weight: 600;

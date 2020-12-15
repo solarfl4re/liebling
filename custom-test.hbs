@@ -6,6 +6,11 @@ This template is used for the post page.
 into the {body} of the default.hbs template --}}
 {{!< default}}
 
+{{#contentFor "customScripts"}}
+  <script src="{{asset "quizlib.1.0.1.min.js"}}"></script>
+  <link rel="stylesheet" type="text/css" href="{{asset "quiz.css"}}" media="screen" />
+{{/contentFor}}
+
 <div class="main-wrap">
   {{!-- Everything inside the #post tags pulls data from the post --}}
   {{#post}}

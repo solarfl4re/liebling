@@ -1,0 +1,41 @@
+.quiz input {
+  width: auto;
+  margin-right: 0.5em;
+  margin-bottom: 0;
+}
+
+.quiz li {
+  display: block;
+  margin-bottom: 0.2em;
+}
+
+.quiz h4 {
+  margin-bottom: 0.5em;
+}
+
+.quizlib-question {
+    margin-bottom: 1em;
+}
+
+.quizlib-question-title {}
+
+.quizlib-question-answers ul {
+    list-style: none;
+}
+
+.quizlib-question-warning {
+    color: #f44336 !important;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+}
+
+.quizlib-correct {
+    color: #4caf50 !important;
+}
+
+.quizlib-incorrect {
+    color: #f44336 !important;
+}
+
+
+/*# sourceMappingURL=quiz.css.map*/
