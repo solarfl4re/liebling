@@ -41,7 +41,7 @@ into the {body} of the default.hbs template --}}
   </section>
   <div class="l-content">
     <div class="l-wrapper" data-aos="fade-up" data-aos-delay="300">
-      <div class="l-grid centered">
+      {{!--
         {{#get "posts" filter="featured:true" include="authors,tags" limit="5" as |featured|}}
           {{#if featured}}
             <div class="m-featured-slider glide js-featured-slider">
@@ -108,8 +108,41 @@ into the {body} of the default.hbs template --}}
             </div>
           {{/if}}
         {{/get}}
+      --}}
+      <h2>Підручники</h2>
+       <div class="l-grid centered">
+      <h3>A1</h3>
         {{!-- The tag below iterates over all the posts --}}
+        {{#get "posts" filter="tag:pidruchnik + tag:a1" include="authors,tags"}}
         {{> "loop"}}
+        {{/get}}
+      <h3>A2</h3>
+        {{!-- The tag below iterates over all the posts --}}
+        {{#get "posts" filter="tag:pidruchnik + tag:a2" include="authors,tags"}}
+        {{> "loop"}}
+        {{/get}}
+       </div>
+      <h2>Тести</h2>
+       <div class="l-grid centered">
+        {{!-- The tag below iterates over all the posts --}}
+        {{#get "posts" filter="tag:test" include="authors,tags"}}
+        {{> "loop"}}
+        {{/get}}
+       </div>
+      <h2>Пісні</h2>
+       <div class="l-grid centered">
+        {{!-- The tag below iterates over all the posts --}}
+        {{#get "posts" filter="tag:pisnia" include="authors,tags"}}
+        {{> "loop"}}
+        {{/get}}
+       </div>
+      <h2>Фільми</h2>
+       <div class="l-grid centered">
+        {{!-- The tag below iterates over all the posts --}}
+        {{#get "posts" filter="tag:film" include="authors,tags"}}
+        {{> "loop"}}
+        {{/get}}
+       </div>
       </div>
     </div>
     {{!-- Links to Previous/Next posts --}}
